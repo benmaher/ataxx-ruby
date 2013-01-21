@@ -102,7 +102,7 @@ class GameController
         piece_destintation = gets.strip
 
         if @current_player_piece.allowed_move?(piece_destintation) &&
-          !@game_grid_model.occupied?(piece_destintation)
+          !@game_grid_model.occupied_location?(piece_destintation)
           # -- Move is allowed by piece and destination is not occupied.
 
           # -- Get destination grid point.
